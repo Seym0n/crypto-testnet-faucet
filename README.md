@@ -1,6 +1,6 @@
-# Litecoin Testnet faucet
+# Crypto Testnet faucet
 
-This is a cryptocurrency testnet faucet for Litecoin based on the cutting-edge web framework Next.js. 
+This is a cryptocurrency testnet faucet for Litecoin based on the cutting-edge web framework Next.js. Of course, the script can be amended for any other cryptocurrency as well.
 The faucet script utilizes Block.io API to send testnet coins to an address which eliminates expensive wallet hosting.
 
 ## Requirements
@@ -22,3 +22,7 @@ The faucet script utilizes Block.io API to send testnet coins to an address whic
 - `BLOCKIO_APIKEY`: Block.io API Key, e.g., LTC Testnet
 - `BLOCKIO_ADDR_LABEL`: Block.io Address Label you specified when creating a new address, e.g., default
 - `BLOCKIO_SECRET_PIN`: Block.io Secret PIN
+
+## Disclaimer
+
+This is my first project in Next.js, however, I'm far more experienced in developing cryptocurrency faucets in PHP.
