@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
+import Image from 'next/image'
+
 import { Inter } from "next/font/google";
-import "./globals.css";
+import './globals.css';
+import style from './layout.module.css'
+import 'spectre.css/dist/spectre.min.css';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +21,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={[inter.className, style.body].join(' ')}>
+        <div className="container grid-lg">
+          <header className={["navbar", style.navbar].join(' ')}>
+            <section className="navbar-section">
+              <a href="..." className={[style.navlogo, 'navbar-brand mr-2'].join(' ')}><Image src="/litecoin-ltc-logo.svg" width="32" className="mr-2" height="32" alt="Litecoin Logo"></Image> Litecoin Testnet Faucet</a>
+            </section>
+          </header>
+
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

@@ -1,0 +1,8 @@
+.navlogo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    margin-bottom: 40px;
+}
